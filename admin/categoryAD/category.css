@@ -1,0 +1,81 @@
+a,
+ul,
+li {
+	text-decoration: none;
+	list-style: none;
+}
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.content-right {
+	width: 80%;
+	margin: 10px 0px 0px 0px;
+	background-color: lightgray;
+	border-radius: 10px;
+	position: relative;
+}
+
+.form-category-add {
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+text-align: center;
+margin-top: 160px;
+}
+
+.form-category-add h1 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.form-category-add input[type="text"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 16px;
+outline: none;
+}
+
+.btn-cate-page {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.btn-category-list,
+.btn-add {
+display: inline-block;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+text-align: center;
+color: #ffffff;
+background-color: #ff4a4a;
+border: none;
+transition: all 0.3s ease;
+}
+/*-------------------thông báo khi submit----------------------*/
+.mesage-submit {
+	position: absolute;
+	left: 47%;
+	bottom: 235px;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	color: #000;
+	border-radius: 10px;
+  }
+  
+  .mesage-submit.show {
+	opacity: 1;
+  }

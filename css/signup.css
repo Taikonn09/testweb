@@ -1,0 +1,171 @@
+/* Reset các giá trị mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Định nghĩa các biến cho màu sắc, font chữ và padding */
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --font-family: 'Roboto', sans-serif;
+    --form-padding: 1.5rem;
+  }
+  
+  /* Định nghĩa kiểu cho thẻ body */
+  body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f8f9fa;
+  }
+  
+  /* Định nghĩa kiểu cho thẻ h1 */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  /* Định nghĩa kiểu cho thẻ form */
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: var(--form-padding);
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    background-color: #fff;
+  }
+  
+  /* Định nghĩa kiểu cho các phần tử trong form */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+  }
+  
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+  }
+  
+  /* Định nghĩa kiểu cho nút đăng ký */
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.
+  }
+  .btn:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn:focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+  
+  .btn:active {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+  }
+  
+  .btn.disabled,
+  .btn:disabled {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  /* Định nghĩa kiểu cho đường viền lỗi */
+  .is-invalid {
+    border-color: #dc3545;
+  }
+  
+  .is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  }
+  
+  /* Định nghĩa kiểu cho đường viền thành công */
+  .is-valid {
+    border-color: #28a745;
+  }
+  
+  .is-valid:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  }
+  
+  /* Định nghĩa kiểu cho lỗi thông báo */
+  .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+  
+  .invalid-feedback.is-visible {
+    display: block;
+  }
+  
+  /* Định nghĩa kiểu cho thông báo thành công */
+  .valid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #28a745;
+  }
+  
+  .valid-feedback.is-visible {
+    display: block;
+  }
+    
